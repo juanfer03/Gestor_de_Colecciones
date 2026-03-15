@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Gestor de Colecciones — Prototipo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Mi Biblioteca</h1>
+      <form class="search-form" role="search" aria-label="Buscar libros">
+        <input
+          type="search"
+          placeholder="Buscar por título, autor o etiqueta"
+          aria-label="Buscar"
+        />
+      </form>
+    </header>
+
+    <main class="container">
+      <section aria-label="Galería de libros" class="gallery">
+        <article class="book-card" tabindex="0">
+          <img
+            src="https://via.placeholder.com/160x220.png?text=Portada"
+            alt="Portada del libro: Cien años de soledad"
+          />
+          <div class="card-body">
+            <h2 class="title">Cien años de soledad</h2>
+            <p class="authors">Gabriel García Márquez</p>
+            <div class="meta">
+              <span class="status">Leído</span>
+              <div class="rating" aria-label="Puntuación: 5 de 5" role="img">
+                ★★★★★
+              </div>
+            </div>
+            <p class="notes">Notas: Clásico de realismo mágico.</p>
+            <div class="actions">
+              <button aria-label="Editar libro">Editar</button>
+              <button aria-label="Cambiar estado">Cambiar estado</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" tabindex="0">
+          <img
+            src="https://via.placeholder.com/160x220.png?text=Portada"
+            alt="Portada del libro: Sapiens"
+          />
+          <div class="card-body">
+            <h2 class="title">Sapiens</h2>
+            <p class="authors">Yuval Noah Harari</p>
+            <div class="meta">
+              <span class="status">Por leer</span>
+              <div class="rating" aria-label="Puntuación: 0 de 5" role="img">
+                ☆☆☆☆☆
+              </div>
+            </div>
+            <p class="notes">Notas: Historia de la humanidad.</p>
+            <div class="actions">
+              <button aria-label="Editar libro">Editar</button>
+              <button aria-label="Cambiar estado">Cambiar estado</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="book-card" tabindex="0">
+          <img
+            src="https://via.placeholder.com/160x220.png?text=Portada"
+            alt="Portada del libro: El principito"
+          />
+          <div class="card-body">
+            <h2 class="title">El principito</h2>
+            <p class="authors">Antoine de Saint-Exupéry</p>
+            <div class="meta">
+              <span class="status">Leyendo</span>
+              <div class="rating" aria-label="Puntuación: 4 de 5" role="img">
+                ★★★★☆
+              </div>
+            </div>
+            <p class="notes">Notas: Lectura pausada.</p>
+            <div class="actions">
+              <button aria-label="Editar libro">Editar</button>
+              <button aria-label="Cambiar estado">Cambiar estado</button>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Prototipo estático — Fase 1</p>
+    </footer>
+  </body>
+</html>
